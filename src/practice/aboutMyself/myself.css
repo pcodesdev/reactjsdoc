@@ -1,0 +1,32 @@
+.myself {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  background-color: #fad3e7;
+}
+
+.personal__detail {
+  min-width: 300px;
+  min-height: 230px;
+  background: #fff;
+  margin: 1rem auto;
+  padding: 3px;
+  z-index: 1;
+  border-radius: 5px;
+  -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
+  box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+}
+h1 {
+  font-family: montserrat;
+}
+p {
+  font-family: fantasy;
+}
+
+.avatar {
+  width: 310px;
+  object-fit: cover;
+}

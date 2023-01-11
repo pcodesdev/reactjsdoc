@@ -1,0 +1,18 @@
+.mybutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: aquamarine;
+}
+
+.main-btn {
+    font-stretch: narrower;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 55px;
+    border-radius: 5px 8px;
+    color: honeydew;
+    background-color: cyan;
+    border: 0;
+}

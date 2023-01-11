@@ -1,0 +1,14 @@
+.header {
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headertext {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: unset;
+    font-size: 57px;
+    line-height: 70px;
+}
