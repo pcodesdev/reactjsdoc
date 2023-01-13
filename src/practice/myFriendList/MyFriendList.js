@@ -10,8 +10,8 @@ function MyFriendList() {
   return (
     <div className="friend__list">
       {friends.map((friend) => (
-        <ul>
-          <li key={friend.id}>{friend.name}</li>
+        <ul key={friend.id}>
+          <li>{friend.name}</li>
           <p>{friend.age}</p>
         </ul>
       ))}
