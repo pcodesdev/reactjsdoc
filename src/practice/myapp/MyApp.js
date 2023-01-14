@@ -1,14 +1,20 @@
-import React from 'react';
-// import MyButton from './MyButton'; // Imported MyButton component
-import './myapp.css'; // Imported css stylesheet
+import React, { useState } from "react";
+import MyButton from "../mybutton/MyButton";
+import "./myapp.css"; // Imported css stylesheet
 
 function MyApp() {
-    return (
-        <div className='header'>
-            <h1 className='headertext'>Welcome to My App</h1>
+  const [count, setCount] = useState(0);
 
-        </div>
-    );
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div className="header">
+      <h1>Counters that update separately</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
 }
 
 export default MyApp;

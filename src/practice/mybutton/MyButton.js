@@ -1,17 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+
 import "./mybutton.css";
 
-function MyButton() {
+function MyButton({ count, onClick }) {
   //handle click function
   function handleClick() {
     alert("You clicked me!");
   }
 
-  const [count, setCount] = useState(0); // use of useState to update the screen
-
-  function incremeentCounter() {
-    setCount(count + 1);
-  }
   return (
     <div className="mybutton">
       {/* Any time the button is clicked a popup window appears with the message "you clicked me" */}
@@ -24,7 +20,7 @@ function MyButton() {
       </button>
       {/* Any time the button is clicked the count value increases by 1" */}
       <button
-        onClick={incremeentCounter}
+        onClick={onClick}
         className="main-btn"
         style={{ margin: "3rem auto", padding: "0.5rem" }}
       >
